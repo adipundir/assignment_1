@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        justify-content: center;
+        /* max-height: 90%; */
+        align-items: center;
+    }
+
+    .box {
+        width: 30%;
+        margin: auto;
+        position: absolute;
+        top: 30%;
+        font-size: 20px;
+    }
+    input {
+        font-size: 22px;
+    }
+
+    select {
+        font-size: 30px;
+        width: 200px;
+    }
+
+    option{
+        font-size: 24px;
+    }
+</style>
+<body style="background-size: cover;" background="background.jpg" width="100%">
+    <div class="container">
+        <div class="box"> 
+            <h1> Register for Sports Day</h1>
+            <form>
+            <input type="text" name="name" placeholder="Name">
+            <br><br>
+            <input type="text" name="Admission" placeholder="Admission Number">
+            
+            <br><br>
+            <select id="Sport" name="Sport">
+                <option value="Default" selected disabled>Select Sport</option>
+                <option value="Baseball">Baseball</option>
+                <option value="Basketball">Basketball</option>
+                <option value="Football">Football</option>
+                <option value="Tennis">Tennis</option>
+              </select>
+            <br><br>
+            <input type="submit" name="Register">
+        </form>
+        </div>
+    </div>
+</body>
+</html>
